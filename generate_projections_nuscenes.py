@@ -108,6 +108,8 @@ class NuScenesMatchDataset(Dataset):
         pointsensor = self.nusc.get("sample_data", data["LIDAR_TOP"])
         pcl_path = os.path.join(self.nusc.dataroot, pointsensor["filename"])
         pc_original = LidarPointCloud.from_file(pcl_path)
+        if not os.path.exists(pcl_path):
+            return 0
 
         pairing_points = np.empty(0, dtype=np.int64)
         camera_list = [

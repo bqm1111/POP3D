@@ -11,7 +11,6 @@ Run the following script to prepare the `pop3d` conda environment:
 conda env create -f conda_env.yaml
 ```
 Download weights from [this link](https://github.com/zhiqi-li/storage/releases/download/v1.0/r101_dcn_fcos3d_pretrain.pth)  and put them to `./ckpts`
-
 ### MaskCLIP
 **Step 0.** Create a conda environment, activate it and install requirements
 ```shell

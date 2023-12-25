@@ -1,7 +1,7 @@
 # ignore ./data ./ckpt and ./pretarained folders
-./data/
-./ckpt/
-./pretarained/
+data/
+ckpts/
+pretrained/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
